@@ -3,16 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--sécurité-->
+        <meta http-equiv="X-Content-Type-Options" content="nosniff"> <!-- Empêche le navigateur de deviner le type de fichier -->
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"><!-- Empêche le site d’être intégré dans un autre site -->
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block"> <!--active une protection contre les attaques XSS (Cross-Site Scripting)-->
+        <meta name="referrer" content="strict-origin-when-cross-origin"><!--protège les infos envoyées-->
+        <!--politique de sécurité du contenu (CPS)-->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:;">
+        <!-- 🔐 Force HTTPS (fonctionne partiellement en HTML) -->
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title>Projet Serveur Web</title>
         <link rel="stylesheet" href="css/stylesheet.css">
-        <!-- Write your comments here -->
+
     </head>
     <body>
-        <div>
-            <h1>
-            bonjour 
-            </h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#projet">Présentation du projet</a></li>
+                <li><a href="#raspberry">Présentation du Raspberry Pi</a></li>
+                <li><a href="#apache">Apache</a></li>
+                <li><a href="#html">HTML,CSS & JS</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="content" id="projet">
+                <h2>Présentation du projet</h2>
+                <hr>
+                    <ul>
+                        <li>Nous avons choisi de réaliser un serveur web grâce au Raspberry Pi.</Li>
+                        <br>
+                        <li>Le serveur web héberge une page web réalisée par l'équipe afin de servir de support à l'oral de projet.</li>
+                    </ul>
+            </div>          
+            <div class="content" id="raspberry">
+                <h2>Présentation du Raspberry Pi</h2>
+                <hr>
+                <ul>
+                    <li>Le Raspberry Pi est un mini-ordinateur, créé pour rendre l’informatique accessible à tous. Il a été développé par la Raspberry Pi Foundation,la première version en 2012.</li>
+                    <br>
+                    <li>Il peut être relié à un écran, un clavier et une souris, et fonctionne avec un système d’exploitation basé sur Linux.</li>
+                    <br>
+                    <li>Le Raspberry Pi est principalement utilisé pour apprendre la programmation, notamment avec des langages.</li>
+                    <br>
+                    <li>Il permet aussi de réaliser de nombreux projets, comme la robotique, la domotique, ou la création d’un serveur web.
+                Ses principaux avantages sont son faible coût, sa simplicité d’utilisation et sa grande polyvalence.</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Raspberry Pi OS - Linux</h2>
+                <hr>
+                <ul>
+                    <li>Raspberry Pi OS est le système d'exploitation spécialement développé pour Raspberry Pi basé sur Debian.</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Apache</h2>
+                <hr>
+            </div>
+            <div class="content">
+                <h2>HTML, CSS & Javascript</h2>
+                <hr>
+                <ul>
+                    <li>Le HTML (HyperText Markup Language), ou « langage de balisage hypertexte », est le langage fondamental utilisé pour créer des pages web. Il permet de structurer et d’organiser le contenu affiché sur Internet.</li>
+                    <br>
+                    <li>Le HTML fonctionne grâce à des balises, qui encadrent les différents éléments d’une page. Ces balises indiquent au navigateur comment interpréter le contenu. Par exemple, certaines balises servent à définir des titres, des paragraphes, des images ou encore des liens.</li>
+                    <br>
+                    <li>le HTML constitue la base de tout site web. Il est indispensable pour organiser les informations et permettre leur affichage correct dans un navigateur.</li>
+                    <br>
+                    <hr>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Chemin d'une requête</h2>
+                <hr>
+            </div>
+            <div class="content"></div>
         </div>
+        
     </body>
     <script src="js/script.js"></script>
 </html>
