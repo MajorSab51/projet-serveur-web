@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--sécurité-->
-        <meta http-equiv="X-Content-Type-Options" content="nosniff"> <!-- Empêche le navigateur de deviner le type de fichier -->
-        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"><!-- Empêche le site d’être intégré dans un autre site -->
-        <meta http-equiv="X-XSS-Protection" content="1; mode=block"> <!--active une protection contre les attaques XSS (Cross-Site Scripting)-->
-        <meta name="referrer" content="strict-origin-when-cross-origin"><!--protège les infos envoyées-->
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">    <!-- Empêche le navigateur de deviner le type de fichier -->
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">        <!-- Empêche le site d’être intégré dans un autre site -->
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">    <!-- Active une protection contre les attaques XSS (Cross-Site Scripting)-->
+        <meta name="referrer" content="strict-origin-when-cross-origin"><!-- Protège les infos envoyées-->
         <!--politique de sécurité du contenu (CPS)-->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:;">
-        <!-- 🔐 Force HTTPS (fonctionne partiellement en HTML) -->
+        <!-- Force HTTPS -->
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title>Projet Serveur Web</title>
         <link rel="stylesheet" href="css/stylesheet.css">
@@ -19,64 +19,108 @@
     <body>
         <nav>
             <ul class="navbar">
-                <li><a href="#projet">Présentation du projet</a></li>
+                <li><a href="#intro">Présentation du projet</a></li>
                 <li><a href="#raspberry">Présentation du Raspberry Pi</a></li>
                 <li><a href="#apache">Apache</a></li>
                 <li><a href="#html">HTML,CSS & JS</a></li>
             </ul>
         </nav>
         <div class="container">
-            <div class="content" id="projet">
-                <h2>Présentation du projet</h2>
+            <div class="content" id="intro">
+                <h2>Introduction</h2>
                 <hr>
                     <ul>
-                        <li>Nous avons choisi de réaliser un serveur web grâce au Raspberry Pi.</Li>
+                        <li>Utilisation du Raspberry Pi comme serveur web.</Li>
                         <br>
-                        <li>Le serveur web héberge une page web réalisée par l'équipe afin de servir de support à l'oral de projet.</li>
+                        <li>Objectif : comprendre le fonctionnement d'un serveur web et des échanges réseau.</li>
+                        <br>
+                        <li>Cette page web réalisé par l'équipe et hébergé sur le Raspberry Pi sert de support à la présentation.</li>
                     </ul>
-            </div>          
+            </div>
             <div class="content" id="raspberry">
-                <h2>Présentation du Raspberry Pi</h2>
+                <h2>Raspberry Pi</h2>
                 <hr>
                 <ul>
-                    <li>Le Raspberry Pi est un mini-ordinateur, créé pour rendre l’informatique accessible à tous. Il a été développé par la Raspberry Pi Foundation,la première version en 2012.</li>
+                    <li>Nano-ordinateur : contient un processeur, de la mémoire vive et du stockage.</li>
                     <br>
-                    <li>Il peut être relié à un écran, un clavier et une souris, et fonctionne avec un système d’exploitation basé sur Linux.</li>
+                    <li>Présence de ports : USB, HDMI, Ethernet, USB-C.</li>
                     <br>
-                    <li>Le Raspberry Pi est principalement utilisé pour apprendre la programmation, notamment avec des langages.</li>
+                    <li>Petit, faible consommation électrique, faible coût.</li>
                     <br>
-                    <li>Il permet aussi de réaliser de nombreux projets, comme la robotique, la domotique, ou la création d’un serveur web.
-                Ses principaux avantages sont son faible coût, sa simplicité d’utilisation et sa grande polyvalence.</li>
+                    <li>Accessible, polyvalent, peut fonctionner en continu. Permet d'apprendre Linux, le développement et pour créer des projets électroniques.</li>
                 </ul>
             </div>
             <div class="content">
                 <h2>Raspberry Pi OS</h2>
                 <hr>
                 <ul>
-                    <li>Raspberry Pi OS est le système d'exploitation spécialement développé pour Raspberry Pi basé sur Debian.</li>
+                    <li>Basé sur Debian</li>
                 </ul>
             </div>
             <div class="content">
-                <h2>Apache</h2>
-                <hr>
-            </div>
-            <div class="content">
-                <h2>HTML, CSS & Javascript</h2>
+                <h2>Apache HTTP Server</h2>
                 <hr>
                 <ul>
-                    <li>Le HTML (HyperText Markup Language), ou « langage de balisage hypertexte », est le langage fondamental utilisé pour créer des pages web. Il permet de structurer et d’organiser le contenu affiché sur Internet.</li>
+                    <li>Serveur web le plus utilisé dans le monde.</li>
                     <br>
-                    <li>Le HTML fonctionne grâce à des balises, qui encadrent les différents éléments d’une page. Ces balises indiquent au navigateur comment interpréter le contenu. Par exemple, certaines balises servent à définir des titres, des paragraphes, des images ou encore des liens.</li>
+                    <li>Reçoit les requêtes HTTP, traite les demandes et envoie la page web.</li>
                     <br>
-                    <li>le HTML constitue la base de tout site web. Il est indispensable pour organiser les informations et permettre leur affichage correct dans un navigateur.</li>
+                    <li>Facile d'utilisation et adapté aux débutants.</li>
+                    <br>
                 </ul>
+            </div>
+            <div class="content">
+                <h2>Chemin d'une requête HTML</h2>
+                <hr>
+                <!-- INSERER LE SCHEMA-->
                 <hr>
             </div>
             <div class="content">
-                <h2>Chemin d'une requête</h2>
+                <h2>HTML & CSS</h2>
                 <hr>
+                <ul>
+                    <li>HTML : utilise des balises pour ajouter les éléments et structurer la page</li>
+                    <br>
+                    <li>CSS : permet de styliser une page web (couleur, taille, disposition et alignement des éléments.)</li>
+                    <br>
+                    <li>Fichiers envoyé à la machine client.</li>
+                </ul>
             </div>
-            <div class="content"></div>
+            <div class="content">
+                <h2>Sécurité</h2>
+                <hr>
+                <p>Essentielle car serveur accessible depuis Internet</p>
+                <h3><strong>Risques :</strong></h3>
+                <ul>
+                    <li>Failles :</li>
+                        <ul>
+                            <li>Attaques / tentatives d'intrusion.</li>
+                            <li>Accès non autorisé aux fichiers.</li>
+                            <li>Modification du site.</li>
+                        </ul>
+                    <li>Protection :</li>
+                        <ul>
+                            <li>Utilisation d'un pare-feu.</li>
+                            <li>Utilisation de HTTPS.</li>
+                            <li>Mettre à jour les logiciels régulièrement.</li>
+                            <li>Gestion des droits Linux</li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Applications concrètes</h2>
+                <hr>
+                <ul>
+                    <li>Héberger un site personnel</li>
+                    <li>Gérer un serveur de fichier</li>
+                    <li>Gérer la domotique d'une maison</li>
+                    <li>Tester des projets web</li>
+                    <li>Gagner des compétences en réseaux et serveurs.</li>
+                </ul>
+            </div>
+            <div class="content">
+
+            </div>
         </div>
     </body>
     <script src="js/script.js"></script>
