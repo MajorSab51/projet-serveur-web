@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 80px;
+}
+
 body {
     background: linear-gradient(-45deg, black, #003598, #370063, #23d5ab);
     background-color: black 0.1;
@@ -84,4 +88,9 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+
+.schema {
+    width: 100%;
+    border-radius: 20px;
 }

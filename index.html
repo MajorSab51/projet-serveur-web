@@ -19,11 +19,15 @@
     <body>
         <nav>
             <ul class="navbar">
-                <li><a href="#intro">Présentation du projet</a></li>
-                <li><a href="#raspberry">Présentation du Raspberry Pi</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#raspberry">Raspberry Pi</a></li>
+                <li><a href="#raspberryos">Raspberry Pi OS</a></li>
                 <li><a href="#apache">Apache</a></li>
+                <li><a href="#schema">Schéma</a></li>
                 <li><a href="#html">HTML,CSS & JS</a></li>
+                <li><a href="#securite">Sécurité</a></li>
             </ul>
+            
         </nav>
         <div class="container">
             <div class="content" id="intro">
@@ -50,14 +54,14 @@
                     <li>Accessible, polyvalent, peut fonctionner en continu. Permet d'apprendre Linux, le développement et pour créer des projets électroniques.</li>
                 </ul>
             </div>
-            <div class="content">
+            <div class="content" id="raspberryos">
                 <h2>Raspberry Pi OS</h2>
                 <hr>
                 <ul>
                     <li>Basé sur Debian</li>
                 </ul>
             </div>
-            <div class="content">
+            <div class="content" id="apache">
                 <h2>Apache HTTP Server</h2>
                 <hr>
                 <ul>
@@ -69,24 +73,26 @@
                     <br>
                 </ul>
             </div>
-            <div class="content">
-                <h2>Chemin d'une requête HTML</h2>
-                <hr>
-                <!-- INSERER LE SCHEMA-->
-                <hr>
+            <div class="content" id="schema">
+                <h2>Chemin d'une requête HTTPS</h2>
+                <img src="img/request.png" alt="Schéma" class="schema">
             </div>
-            <div class="content">
+            <div class="content" id="html">
                 <h2>HTML & CSS</h2>
                 <hr>
                 <ul>
                     <li>HTML : utilise des balises pour ajouter les éléments et structurer la page</li>
                     <br>
+                    <img src="img/htmlcode.png" alt="HTML" class="schema">
+                    <br>
                     <li>CSS : permet de styliser une page web (couleur, taille, disposition et alignement des éléments.)</li>
+                    <br>
+                    <img src="img/csscode.png" alt="CSS" class="schema">
                     <br>
                     <li>Fichiers envoyé à la machine client.</li>
                 </ul>
             </div>
-            <div class="content">
+            <div class="content" id="securite">
                 <h2>Sécurité</h2>
                 <hr>
                 <p>Essentielle car serveur accessible depuis Internet</p>
@@ -117,9 +123,6 @@
                     <li>Tester des projets web</li>
                     <li>Gagner des compétences en réseaux et serveurs.</li>
                 </ul>
-            </div>
-            <div class="content">
-
             </div>
         </div>
     </body>
